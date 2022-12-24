@@ -9,7 +9,6 @@ async function getAdvice() {
         const data = await res.json();
         advice.innerText = `${data.slip.advice}`;
         adId.innerText = `Advice #${data.slip.id}`;
-        console.log(data);
     } catch (error) {
         advice.innerText = "Falha na requisição"; 
     }
