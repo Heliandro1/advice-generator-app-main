@@ -9,14 +9,14 @@ body, html{
     height: 100vh;
     width: 100vw;
     background-color: hsl(218, 23%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 section.container{
     width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: auto;
     background-color: hsl(217, 19%, 24%);
     display: flex;
     flex-direction: column;
@@ -47,10 +47,8 @@ div#btn:hover{
 div.advice-content{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 0;
-    height: 170px;
-    justify-content: space-evenly;
+    min-height: 170px;
+    justify-content: space-around;
 }
 
 p#advice-id{
@@ -62,9 +60,9 @@ p#advice-id{
 q#advice{
     color: hsl(193, 38%, 86%);
 }
-.attribution { font-size: 11px; text-align: center; 
+footer{
+    font-size: 11px; text-align: center; 
     position: absolute;
     bottom: 0;
-    width: 100%;
 }
 .attribution a { color: hsl(228, 45%, 44%); }

@@ -2,8 +2,12 @@
     section.container{
         width: 500px;
         height: 320px;
-        justify-content: flex-end;
-        
+        justify-content: flex-start;
+    }
+    div.advice-content{
+        height: 235px;
+        justify-content: center;
+        gap: 20px;
     }
     q#advice{
         font-size: 28px;
